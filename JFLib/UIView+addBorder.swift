@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIView {
-    func addBorder(edges: UIRectEdge, color: UIColor = UIColor.white, thickness: CGFloat = 1.0) -> [UIView] {
+    public func addBorder(edges: UIRectEdge, color: UIColor = UIColor.white, thickness: CGFloat = 1.0) -> [UIView] {
         
         var borders = [UIView]()
         
