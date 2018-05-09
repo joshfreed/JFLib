@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JPFFancyTextField" customModule="JFLib" customModuleProvider="target">
+            <connections>
+                <outlet property="_theTextField" destination="mwc-Ev-Md8" id="cwm-kd-edD"/>
+                <outlet property="detailLabel" destination="mWa-Ct-Pfn" id="SS0-5l-NzN"/>
+                <outlet property="floatingLabel" destination="zIZ-AC-IYY" id="aVi-xn-aaY"/>
+                <outlet property="labelHiddenConstraint" destination="B2g-S7-5kS" id="Edp-aX-XRp"/>
+                <outlet property="labelShownConstraint" destination="Dpg-yu-dbL" id="S8i-ud-pNj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIZ-AC-IYY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="22.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwc-Ev-Md8" customClass="TheTextField" customModule="JFLib" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="14.5" width="375" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Xtt-NW-Rlm"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-Ct-Pfn">
+                    <rect key="frame" x="0.0" y="50.5" width="375" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zIZ-AC-IYY" firstAttribute="centerY" secondItem="mwc-Ev-Md8" secondAttribute="centerY" id="B2g-S7-5kS"/>
+                <constraint firstItem="mwc-Ev-Md8" firstAttribute="top" secondItem="zIZ-AC-IYY" secondAttribute="bottom" constant="-8" id="Dpg-yu-dbL"/>
+                <constraint firstAttribute="trailing" secondItem="zIZ-AC-IYY" secondAttribute="trailing" id="NfR-GO-WIC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="mwc-Ev-Md8" secondAttribute="top" constant="-14.5" id="Q7m-DI-Ovb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mWa-Ct-Pfn" secondAttribute="bottom" priority="248" id="bpZ-BD-JBA"/>
+                <constraint firstItem="mwc-Ev-Md8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bt0-Kr-Ch6"/>
+                <constraint firstItem="zIZ-AC-IYY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cfv-rl-TB2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mWa-Ct-Pfn" secondAttribute="trailing" id="cjm-Sf-C2o"/>
+                <constraint firstItem="zIZ-AC-IYY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oSS-ew-wx0"/>
+                <constraint firstItem="mWa-Ct-Pfn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qiA-Ve-M7K"/>
+                <constraint firstItem="mWa-Ct-Pfn" firstAttribute="top" secondItem="mwc-Ev-Md8" secondAttribute="bottom" constant="4" id="rnL-Tg-flx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mwc-Ev-Md8" secondAttribute="trailing" id="xL2-rE-lak"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="B2g-S7-5kS"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="34.5" y="-226.5"/>
+        </view>
+    </objects>
+</document>
