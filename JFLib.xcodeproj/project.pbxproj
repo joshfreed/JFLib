@@ -15,6 +15,7 @@
 		53660075201FAB410001C2BF /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53660074201FAB410001C2BF /* DateExtensions.swift */; };
 		536E85A720509E0B004D5426 /* UITableViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E85A620509E0B004D5426 /* UITableViewControllerExtensions.swift */; };
 		536E85A920509E3B004D5426 /* UIView+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E85A820509E3B004D5426 /* UIView+autoLayout.swift */; };
+		5372055220A5DD9D00B01C33 /* UISearchBar+setSearchFieldColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5372055120A5DD9D00B01C33 /* UISearchBar+setSearchFieldColor.swift */; };
 		537D6AD01F575C2C00E0E630 /* JFLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D6AC61F575C2C00E0E630 /* JFLib.framework */; };
 		537D6AD71F575C2C00E0E630 /* JFLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 537D6AC91F575C2C00E0E630 /* JFLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		537D6AE11F575D1800E0E630 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D6AE01F575D1800E0E630 /* UIView+addBorder.swift */; };
@@ -44,6 +45,7 @@
 		53660074201FAB410001C2BF /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		536E85A620509E0B004D5426 /* UITableViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewControllerExtensions.swift; sourceTree = "<group>"; };
 		536E85A820509E3B004D5426 /* UIView+autoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+autoLayout.swift"; sourceTree = "<group>"; };
+		5372055120A5DD9D00B01C33 /* UISearchBar+setSearchFieldColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+setSearchFieldColor.swift"; sourceTree = "<group>"; };
 		537D6AC61F575C2C00E0E630 /* JFLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JFLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D6AC91F575C2C00E0E630 /* JFLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFLib.h; sourceTree = "<group>"; };
 		537D6ACA1F575C2C00E0E630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				536E85A620509E0B004D5426 /* UITableViewControllerExtensions.swift */,
 				53D380FD2062C833005704F8 /* UITableViewExtensions.swift */,
 				53660074201FAB410001C2BF /* DateExtensions.swift */,
+				5372055120A5DD9D00B01C33 /* UISearchBar+setSearchFieldColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				53D6AD171F82AA57005F6972 /* Result.swift in Sources */,
 				5344A2C32063FBCD00C9FDEF /* JPFFancyTextField.swift in Sources */,
 				537D6AE11F575D1800E0E630 /* UIView+addBorder.swift in Sources */,
+				5372055220A5DD9D00B01C33 /* UISearchBar+setSearchFieldColor.swift in Sources */,
 				537D6AE51F575E4700E0E630 /* UIImageView+fixTintIssue.swift in Sources */,
 				537D6AE31F575DE600E0E630 /* Delay.swift in Sources */,
 			);
