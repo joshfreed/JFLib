@@ -1,5 +1,5 @@
 import Foundation
-import JFLib_DI
+import JFLib_Services
 
 extension Mediator {
     public func registerHandler<CommandType: JFMCommand, HandlerType: JFMCommandHandler>(

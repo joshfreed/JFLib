@@ -13,23 +13,25 @@ let package = Package(
             name: "JFLib.Combine",
             targets: ["JFLib.Combine"]),
         .library(
-            name: "JFLib.DI",
-            targets: ["JFLib.DI"]),
+            name: "JFLib.Services",
+            targets: ["JFLib.Services"]),
         .library(
             name: "JFLib.Mediator",
             targets: ["JFLib.Mediator"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "Dip", url: "https://github.com/AliSoftware/Dip", from: "7.1.1"),
+    ],
     targets: [
         .target(
             name: "JFLib.Combine",
             dependencies: []),
         .target(
-            name: "JFLib.DI",
-            dependencies: []),
+            name: "JFLib.Services",
+            dependencies: ["Dip"]),
         .target(
             name: "JFLib.Mediator",
-            dependencies: ["JFLib.DI"]),
+            dependencies: ["JFLib.Services"]),
         .testTarget(
             name: "JFLib.MediatorTests",
             dependencies: ["JFLib.Mediator"]),
