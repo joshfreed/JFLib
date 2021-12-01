@@ -29,6 +29,9 @@ let package = Package(
         .target(
             name: "JFLib.Services",
             dependencies: ["Dip"]),
+        .testTarget(
+            name: "JFLib.ServicesTests",
+            dependencies: ["JFLib.Services"]),
         .target(
             name: "JFLib.Mediator",
             dependencies: ["JFLib.Services"]),

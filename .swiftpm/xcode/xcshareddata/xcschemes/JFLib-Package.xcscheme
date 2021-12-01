@@ -76,6 +76,20 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "JFLib.App"
+               BuildableName = "JFLib.App"
+               BlueprintName = "JFLib.App"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -91,6 +105,16 @@
                BlueprintIdentifier = "JFLib.MediatorTests"
                BuildableName = "JFLib.MediatorTests"
                BlueprintName = "JFLib.MediatorTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "JFLib.ServicesTests"
+               BuildableName = "JFLib.ServicesTests"
+               BlueprintName = "JFLib.ServicesTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>

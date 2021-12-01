@@ -21,4 +21,8 @@ public class JFServices {
     func resolve<T>() throws -> T {
         try container.resolve()
     }
+
+    func deinitialize() {
+        JFServices.shared = nil
+    }
 }
