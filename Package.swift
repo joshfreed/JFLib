@@ -19,6 +19,9 @@ let package = Package(
             name: "JFLib.Services",
             targets: ["JFLib.Services"]),
         .library(
+            name: "JFLib.DomainEvents",
+            targets: ["JFLib.DomainEvents"]),
+        .library(
             name: "JFLib.Mediator",
             targets: ["JFLib.Mediator"]),
         .library(
@@ -38,15 +41,22 @@ let package = Package(
         .target(
             name: "JFLib.Services",
             dependencies: ["Dip"]),
-        .testTarget(
-            name: "JFLib.ServicesTests",
-            dependencies: ["JFLib.Services"]),
+        .target(
+            name: "JFLib.DomainEvents",
+            dependencies: []),
         .target(
             name: "JFLib.Mediator",
             dependencies: ["JFLib.Services"]),
+
+        .testTarget(
+            name: "JFLib.DomainEventsTests",
+            dependencies: ["JFLib.DomainEvents"]),
         .testTarget(
             name: "JFLib.MediatorTests",
             dependencies: ["JFLib.Mediator"]),
+        .testTarget(
+            name: "JFLib.ServicesTests",
+            dependencies: ["JFLib.Services"]),
         .target(
             name: "JFLib.Testing",
             dependencies: ["JFLib.Date"]),

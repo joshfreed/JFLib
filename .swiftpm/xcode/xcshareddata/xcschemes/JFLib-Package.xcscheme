@@ -118,13 +118,28 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "JFLib.DomainEvents"
+               BuildableName = "JFLib.DomainEvents"
+               BlueprintName = "JFLib.DomainEvents"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -143,6 +158,16 @@
                BlueprintIdentifier = "JFLib.ServicesTests"
                BuildableName = "JFLib.ServicesTests"
                BlueprintName = "JFLib.ServicesTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "JFLib.DomainEventsTests"
+               BuildableName = "JFLib.DomainEventsTests"
+               BlueprintName = "JFLib.DomainEventsTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
