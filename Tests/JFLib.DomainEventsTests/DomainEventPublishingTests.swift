@@ -55,6 +55,28 @@ class DomainEventPublishingTests: XCTestCase {
 
         XCTAssertEqual(1, events.count)
     }
+
+    func test_handler_class() {
+        let handler = TestEventOneHandler()
+        DomainEventPublisher.shared.subscribe(handler)
+
+        DomainEventPublisher.shared.publish(TestEvent1(id: 1))
+
+        XCTAssertEqual(1, handler.events.count)
+        XCTAssertEqual(1, handler.events[0].id)
+    }
+
+    func test_handler_for_all_events() {
+        let handler = AllEventsHandler()
+        DomainEventPublisher.shared.subscribe(handler)
+
+        DomainEventPublisher.shared.publish(TestEvent1(id: 1))
+        DomainEventPublisher.shared.publish(TestEvent2(id: 2))
+
+        XCTAssertEqual(2, handler.events.count)
+        XCTAssertEqual(1, (handler.events[0] as? TestEvent1)?.id)
+        XCTAssertEqual(2, (handler.events[1] as? TestEvent2)?.id)
+    }
 }
 
 struct TestEvent1: DomainEvent {
@@ -63,4 +85,20 @@ struct TestEvent1: DomainEvent {
 
 struct TestEvent2: DomainEvent {
     let id: Int
+}
+
+class TestEventOneHandler: DomainEventHandler<TestEvent1> {
+    var events: [TestEvent1] = []
+
+    override func handle(event: TestEvent1) {
+        events.append(event)
+    }
+}
+
+class AllEventsHandler: AnyDomainEventHandler {
+    var events: [DomainEvent] = []
+
+    func handleEvent(_ event: DomainEvent) {
+        events.append(event)
+    }
 }
